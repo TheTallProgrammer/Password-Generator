@@ -1,6 +1,6 @@
 
 
-## Falkenberg's Password Generator
+## Falkenberg's Password Generator (Windows Only)
 
 🎉 **Version 1.0 Release** 🎉
 
