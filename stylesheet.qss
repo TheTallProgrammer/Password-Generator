@@ -1,0 +1,290 @@
+/*-----QWidget-----*/
+QWidget {
+    background-color: #2c2f33; /* Subtle dark blue/grey background */
+    color: #dcdcdc; /* Soft light grey text color */
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+}
+
+/*-----QLabel-----*/
+QLabel {
+    background-color: transparent;
+    color: #b0b3b8; /* Light grey text */
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+}
+
+/*-----QPushButton-----*/
+QPushButton {
+    background-color: #4b5c6b; /* Subtle blue/grey button background */
+    color: #ffffff; /* White text */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+}
+
+QPushButton::disabled {
+    background-color: #3e4751; /* Darker grey for disabled buttons */
+}
+
+QPushButton::hover {
+    background-color: #55606b; /* Slightly lighter blue/grey on hover */
+}
+
+QPushButton::pressed {
+    background-color: #3a4b59; /* Darker blue/grey when pressed */
+}
+
+/*-----QCheckBox-----*/
+QCheckBox {
+    background-color: transparent;
+    color: #aab0b8; /* Soft grey text */
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    border: none;
+    border-radius: 5px;
+}
+
+QCheckBox::indicator {
+    background-color: #42484f; /* Dark grey background */
+    border: 1px solid #5c5c5c; /* Dark grey border */
+    width: 12px;
+    height: 12px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #ffab40; /* Light orange for checked state */
+    border: 1px solid #ffab40; /* Light orange border */
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 1px solid #ffab40; /* Light orange border on hover */
+}
+
+QCheckBox::disabled {
+    color: #656565; /* Grey text for disabled state */
+}
+
+QCheckBox::indicator:disabled {
+    background-color: #656565; /* Grey background for disabled state */
+    color: #656565;
+    border: 1px solid #656565;
+}
+
+/*-----QLineEdit-----*/
+QLineEdit {
+    background-color: #3a4b59; /* Darker blue/grey background */
+    color: #e1e5ed; /* Soft light grey text */
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    border: 1px solid #5c5c5c; /* Grey border */
+    padding: 5px;
+}
+
+/*-----QListView-----*/
+QListView {
+    background-color: #4b5c6b; /* Subtle blue/grey background */
+    color: #ffffff; /* White text */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    show-decoration-selected: 0;
+    border-radius: 4px;
+    padding-left: -15px;
+    padding-right: -15px;
+    padding-top: 5px;
+}
+
+QListView:disabled {
+    background-color: #3e4751; /* Darker grey for disabled state */
+}
+
+QListView::item {
+    background-color: #454e5e; /* Dark grey background */
+    border: none;
+    padding: 10px;
+    border-radius: 0px;
+    padding-left : 10px;
+    height: 32px;
+}
+
+QListView::item:selected {
+    color: #ffffff; /* White text */
+    background-color: #55606b; /* Light blue/grey for selected item */
+}
+
+QListView::item:!selected {
+    color: #b0b3b8; /* Light grey text */
+    background-color: transparent;
+    border: none;
+    padding-left : 10px;
+}
+
+QListView::item:!selected:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #4b5c6b; /* Subtle blue/grey background on hover */
+    border: none;
+    padding-left : 10px;
+}
+
+/*-----QTreeView-----*/
+QTreeView {
+    background-color: #2c2f33; /* Subtle dark blue/grey background */
+    show-decoration-selected: 0;
+    color: #b0b3b8; /* Light grey text */
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+}
+
+QTreeView:disabled {
+    background-color: #3e4751; /* Darker grey for disabled state */
+}
+
+QTreeView::item {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+QTreeView::item:hover {
+    background-color: #4b5c6b; /* Blue/grey background on hover */
+    color: #ffffff; /* White text */
+}
+
+QTreeView::item:selected {
+    background-color: #55606b; /* Light blue/grey for selected item */
+    color: #ffffff; /* White text */
+}
+
+QTreeView::item:selected:active {
+    background-color: #4b5c6b; /* Subtle blue/grey for active selected item */
+    color: #ffffff; /* White text */
+}
+
+QTreeView::item:selected:disabled {
+    background-color: #525251; /* Grey background for disabled selected item */
+    color: #656565; /* Grey text */
+}
+
+/*-----QTableView & QTableWidget-----*/
+QTableView {
+    background-color: #2c2f33; /* Subtle dark blue/grey background */
+    border: 1px solid #5c5c5c; /* Grey border */
+    color: #b0b3b8; /* Light grey text */
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    gridline-color: #5c5c5c; /* Grey gridlines */
+    outline : 0;
+}
+
+QTableView::disabled {
+    background-color: #3e4751; /* Darker grey for disabled state */
+    border: 1px solid #32414B; /* Dark grey/blue border */
+    color: #656565; /* Grey text */
+    gridline-color: #656565; /* Grey gridlines */
+    outline : 0;
+}
+
+QTableView::item:hover {
+    background-color: #4b5c6b; /* Blue/grey background on hover */
+    color: #ffffff; /* White text */
+}
+
+QTableView::item:selected {
+    background-color: #55606b; /* Light blue/grey for selected item */
+    color: #ffffff; /* White text */
+}
+
+QTableView::item:selected:disabled {
+    background-color: #1a1b1c; /* Dark grey for disabled selected item */
+    border: 2px solid #525251; /* Grey border */
+    color: #656565; /* Grey text */
+}
+
+QTableCornerButton::section {
+    background-color: #3a4b59; /* Dark blue/grey background */
+    border: none;
+    color: #ffffff; /* White text */
+}
+
+QHeaderView::section {
+    color: #b0b3b8; /* Light grey text */
+    border: 0px;
+    background-color: #3a4b59; /* Dark blue/grey background */
+    font-family: 'Bahnschrift Light'; /* Set font to Bahnschrift Light */
+    padding: 5px;
+}
+
+QHeaderView::section:disabled {
+    background-color: #525251; /* Grey for disabled state */
+    color: #656565; /* Grey text */
+}
+
+QHeaderView::section:checked {
+    color: #ffffff; /* White text */
+    background-color: #4b5c6b; /* Subtle blue/grey background */
+}
+
+QHeaderView::section:checked:disabled {
+    color: #656565; /* Grey text */
+    background-color: #525251; /* Grey background */
+}
+
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one {
+    border-top: 1px solid #353635; /* Subtle grey border */
+}
+
+QHeaderView::section::vertical {
+    border-top: 1px solid #353635; /* Subtle grey border */
+}
+
+QHeaderView::section::horizontal::first,
+QHeaderView::section::horizontal::only-one {
+    border-left: 1px solid #353635; /* Subtle grey border */
+}
+
+QHeaderView::section::horizontal {
+    border-left: 1px solid #353635; /* Subtle grey border */
+}
+
+/*-----QScrollBar-----*/
+QScrollBar:horizontal {
+    background-color: transparent;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    border: none;
+    min-width: 100px;
+    background-color: #4b5c6b; /* Subtle blue/grey scrollbar */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    width: 0px;
+    background-color: #d8dce6; /* Light grey */
+}
+
+QScrollBar:vertical {
+    background-color: transparent;
+    width: 8px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    border: none;
+    min-height: 100px;
+    background-color: #4b5c6b; /* Subtle blue/grey scrollbar */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    height: 0px;
+    background-color: #d8dce6; /* Light grey */
+}
